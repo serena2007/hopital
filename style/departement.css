@@ -1,0 +1,519 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --firstcolor:rgb(71, 186, 215);
+    --secondcolor:green;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+   
+}
+.logo{
+    width: 100px;
+    height: 100px;
+  
+}
+.btn1{
+    border-radius: 10px;
+    background-color: var(--firstcolor);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+}
+.btn1:hover{
+    background-color: var(--secondcolor);
+}
+a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+   font-size: 20px;
+}
+a:hover{
+    color: var(--secondcolor);
+}
+.lien{
+    display: flex;
+    gap: 35px;
+}
+.lien, .btn1{
+    margin-top: 40px;
+}
+.lie{
+     text-decoration: none;
+     margin-top: 20px;
+      color: black;
+}
+.lien-res{
+     display: flex;
+}
+ #burger{
+        display: none;
+    }
+.image{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 350px;
+    border: 1px solid var(--firstcolor);
+    padding: 10px;
+   border-style: dashed;
+  
+}
+h3{
+    font-size: 25px;
+}
+span{
+    font-size: 17px;
+}
+.btn2{
+    padding: 5px 25px;
+    background-color:var(--firstcolor);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+.btn2:hover{
+    background-color: var(--secondcolor);
+}
+#phone{
+    margin-left: 180px;
+    margin-top: 340px;
+    font-size: 40px;
+}
+.icone{
+    display: flex;
+}
+span{
+    margin-left: 20px;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    text-align: justify;
+    max-width: 700px;
+    font-size: 20px;
+   margin-bottom: 20px; 
+}
+h1{
+    text-align: center;
+    color: var(--secondcolor);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#localisation{
+     margin-left: 250px;
+    margin-top: 140px;
+    font-size: 40px;
+}
+#whatsap{
+     margin-left: 1050px;
+    font-size: 40px;
+    margin-top: -107px;
+}
+.foot{
+    width: 100px;
+    height: 140px;
+    padding: 40px 0;
+     margin-left: 10px;
+     margin-top: 20px;
+}
+footer{
+    background-color: var(--firstcolor);
+    margin-top: 80px
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin: 10px 0;
+  min-width: 200px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section span {
+  color: var(--secondcolor);
+}
+
+.footer-section i {
+  color: var(--secondcolor);
+  margin-right: 8px;
+}
+
+.icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--secondcolor);
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-bottom span {
+  color: var(--secondcolor);
+}
+#burger{
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
+    
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .foot{
+    margin-top: 100px;
+  }
+}
+/* Responsive Design */
+/* Pour les écrans jusqu'à 1024px (tablettes et petits laptops) */
+/*@media (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    .footer-column {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .image, .images {
+        flex-direction: column;
+        height: auto;
+    }
+    #phone, #localisation, #whatsap {
+        margin-left: 0;
+        margin-top: 40px;
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+/* Pour les écrans jusqu'à 768px (mobiles et petites tablettes) */
+/*@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lien, .btn1 {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 15px 5px;
+    }
+    .footer-column {
+        width: 100%;
+        padding: 5px 0;
+    }
+    .image, .images, .flex {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    #phone, #localisation, #whatsap {
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+}
+
+/* Pour les écrans très petits (jusqu'à 480px) */
+/*@media (max-width: 480px) {
+    h3 {
+        font-size: 18px;
+    }
+    span, a {
+        font-size: 14px;
+    }
+    .btn1, .btn2 {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .logo, .logo1 {
+        width: 50px;
+        height: 50px;
+    }
+}*/
+/* Responsive général sauf footer */
+
+/* Tablettes et petits laptops */
+@media (max-width: 1240px) {
+  .navbar {
+    gap: 10px;
+  }
+  .lien, .btn1 {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+    .image {
+    
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
+  .flex {
+    width: 35vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #phone, #localisation, #whatsap {
+    margin-left: 0;
+    margin-top: 40px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .navbar {
+    /* flex-direction: column;
+    align-items: center; */
+    gap: 10px;
+  }
+  .lien, .btn1 {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .image {
+    align-items: center;
+    height: auto;
+    gap: 20px;
+  }
+  .flex {
+    width: 50vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #phone, #localisation, #whatsap {
+    margin-left: 0;
+    margin-top: 40px;
+    font-size: 28px;
+    text-align: center;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Mobiles et petites tablettes */
+@media (max-width: 768px) {
+  .navbar {
+    /* flex-direction: column;
+    align-items: center; */
+    gap: 10px;
+  }
+  .lien, .btn1 {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+   .image {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+  .flex {
+    width: 98vw;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  img, .image img {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+  }
+  #phone, #localisation, #whatsap {
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 680px) {
+    #burger{
+        display: block;
+    }
+      #burger{
+        position: absolute;
+      font-size: 50px;
+     left: 550px;
+     top: 20px;
+    }
+    /* .hidden{
+        display: none;
+    } */
+    .lien-res{
+        position: absolute;
+        background-color: transparent;
+       align-items: center;
+       justify-content: center;
+        flex-direction: column;
+        top: 70px;  
+        height: 300px;
+        width: 100px;
+        background-color: var(--firstcolor);
+        right:30px;
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+       
+    }
+    .btn1, .lien{
+        display: none;
+       }
+  }
+  @media screen and (max-width:620px)
+{
+    #burger, .lien-res{
+        left: 520px;
+    }
+}
+@media screen and (max-width:580px)
+{
+    #burger, .lien-res{
+        left: 475px;
+    }
+}
+@media screen and (max-width:550px)
+{
+    #burger, .lien-res{
+        left: 440px;
+    }
+}@media screen and (max-width:550px)
+{
+    #burger, .lien-res{
+        left: 390px;
+    }
+}
+@media screen and (max-width:470px)
+{
+    #burber, .lien-res{
+        left: 360px;
+    }
+}
+@media screen and (max-width:430px)
+{
+    #burger, .lien-res{
+        left: 330px;
+    }
+}
+@media screen and (max-width:405px)
+{
+    #burger, .lien-res{
+        left: 290px;
+    }
+     #burger, .lien-res{
+        left: 300px;
+    }
+}
+@media screen and (max-width:380px)
+{
+     #burger, .lien-res{
+        left: 250px;
+    }
+}
+@media screen and (max-width:340px)
+{
+     #burger, .lien-res{
+        left: 220px;
+    }
+    }
+
+/* Très petits écrans */
+@media (max-width: 480px) {
+  .logo, .logo1 {
+    width: 40px;
+    height: 40px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  .flex {
+    width: 99vw;
+    padding: 4px;
+  }
+  img, .image img {
+    width: 98vw;
+    max-width: 180px;
+    height: auto;
+  }
+  span, a {
+    font-size: 12px;
+  }
+  .btn1, .btn2 {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 380px) {
+  .foot{
+    display: none;
+  }
+}
